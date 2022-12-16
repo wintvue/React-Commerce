@@ -1,7 +1,6 @@
 import Button from '@mui/material/Button';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
-import { createStyles, makeStyles } from '@mui/styles';
 import { useContext, useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { fetchSearchAPI } from '../../utils/fetchSearchAPI';
@@ -90,7 +89,6 @@ const UserTable = () => {
       const handleChange = (event, value) => {
         setPage(value);
       };
-      const classes = useStyles();
 
       return(
       <>
@@ -147,7 +145,7 @@ const UserTable = () => {
                               </td>
                             } 
                             <td>
-                              <Button onClick={() => {window.open(channelUrl, "_blank")}} variant="contained" className = {classes.root}>Link</Button>
+                              <Button onClick={() => {window.open(channelUrl, "_blank")}} variant="contained">Link</Button>
                             </td>
                           </tr>
                         )
@@ -241,10 +239,3 @@ const StyledTable = styled.table`
     },
 `
 
-const useStyles = makeStyles((theme) =>
-    createStyles({
-        root: {
-            background: 'linear-gradient(45deg, #f81d1d 0%, #f81d1d 100%)',
-        }
-    })
-    );
