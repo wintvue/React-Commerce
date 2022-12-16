@@ -1,0 +1,11 @@
+.category-btn{
+    border: none;
+    color: rgba(255, 255, 255, 0.903);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Roboto, Arial, sans-serif;
+    cursor: pointer;
+    background-color: rgba(255, 1, 1, 0.959);
+}
