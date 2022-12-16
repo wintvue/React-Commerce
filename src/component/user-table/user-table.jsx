@@ -145,7 +145,9 @@ const UserTable = () => {
                               </td>
                             } 
                             <td>
-                              <Button onClick={() => {window.open(channelUrl, "_blank")}} variant="contained">Link</Button>
+                              <Button sx={{backgroundColor:'#f10707de', '&:hover':{
+                                backgroundColor:"#f10707de"
+                                }}} onClick={() => {window.open(channelUrl, "_blank")}} variant="contained">Link</Button>
                             </td>
                           </tr>
                         )
